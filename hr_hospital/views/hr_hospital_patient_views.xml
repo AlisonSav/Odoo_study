@@ -1,0 +1,54 @@
+<odoo>
+
+    <record id="hr_hospital_patient_tree" model="ir.ui.view">
+        <field name="name">hr_hospital.patient.tree ()</field>
+        <field name="model">hr_hospital.patient</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="doctor_id"/>
+                <field name="disease_ids" widget="one2many"/>
+                <field name="visit_ids" widget="one2many"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_hospital_patient_form" model="ir.ui.view">
+        <field name="name">hr_hospital.patient.form ()</field>
+        <field name="model">hr_hospital.patient</field>
+        <field name="arch" type="xml">
+            <form>
+                <header></header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="gender"/>
+                        </group>
+                        <group>
+                            <field name="disease_ids"/>
+                            <field name="doctor_id"/>
+                            <field name="visit_ids"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hr_hospital_patient_window" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr_hospital.patient</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="hr_hospital_menu_patient"
+              action="action_hr_hospital_patient_window"
+              parent="hr_hospital_main_menu_catalog"
+              name="Patients" sequence="200"/>
+
+</odoo>

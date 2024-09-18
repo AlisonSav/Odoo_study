@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="disease_1" model="hr_hospital.disease">
+        <field name="name">Gripp</field>
+    </record>
+    <record id="disease_2" model="hr_hospital.disease">
+        <field name="name">Astma</field>
+    </record>
+    <record id="disease_3" model="hr_hospital.disease">
+        <field name="name">Diabet</field>
+    </record>
+</odoo>

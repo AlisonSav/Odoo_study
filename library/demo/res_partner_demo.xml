@@ -1,0 +1,28 @@
+<odoo>
+
+    <record id="demo_author_1" model="res.partner">
+        <field name="name">Alisa</field>
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+    <record id="demo_author_2" model="res.partner">
+        <field name="name">Ololo</field>
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+    <record id="demo_author_3" model="res.partner">
+        <field name="name">Trolo</field>
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+    <record id="demo_author_4" model="res.partner">
+        <field name="name">Alex</field>
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+    <record id="demo_author_5" model="res.partner">
+        <field name="name">Nixon</field>
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+</odoo>

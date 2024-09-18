@@ -1,0 +1,50 @@
+<odoo>
+
+    <record id="library_book_tree" model="ir.ui.view">
+        <field name="name">library.book.tree ()</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="res_partner_id"/>
+                <field name="res_partner_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="library_book_form" model="ir.ui.view">
+        <field name="name">library.book.form ()</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <header></header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="res_partner_id"/>
+                            <field name="res_partner_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_library_book_window" model="ir.actions.act_window">
+        <field name="name">Book</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="library_menu_book"
+              action="action_library_book_window"
+              parent="library_main_menu_catalog"
+              name="Book" sequence="200"/>
+
+</odoo>

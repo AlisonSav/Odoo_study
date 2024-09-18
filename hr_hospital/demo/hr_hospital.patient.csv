@@ -1,0 +1,6 @@
+"id","name","age","gender","doctor_id:id","disease_ids:id"
+1,"Harry Potter",25,"M","demo_doctor_4","disease_1"
+2,"Melissa Whilks",18,"F","demo_doctor_2","disease_2"
+3,"Hermiona Granger",33,"F","demo_doctor_1","disease_3"
+4,"Ron Weezly",56,"M","demo_doctor_3","disease_1"
+5,"Marina Uokker",62,"F","demo_doctor_5","disease_3"

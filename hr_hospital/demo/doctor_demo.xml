@@ -1,0 +1,33 @@
+<odoo>
+
+    <record id="demo_doctor_1" model="hr_hospital.doctor">
+        <field name="name">Alisa</field>
+        <field name="age">30</field>
+        <field name="specialization">Hirurg</field>
+    </record>
+
+    <record id="demo_doctor_2" model="hr_hospital.doctor">
+        <field name="name">Ololo</field>
+        <field name="age">35</field>
+        <field name="specialization">Lor</field>
+    </record>
+
+    <record id="demo_doctor_3" model="hr_hospital.doctor">
+        <field name="name">Trolo</field>
+        <field name="age">63</field>
+        <field name="specialization">Endocrinolog</field>
+    </record>
+
+    <record id="demo_doctor_4" model="hr_hospital.doctor">
+        <field name="name">Alex</field>
+        <field name="age">29</field>
+        <field name="specialization">Terapevt</field>
+    </record>
+
+    <record id="demo_doctor_5" model="hr_hospital.doctor">
+        <field name="name">Nixon</field>
+        <field name="age">58</field>
+        <field name="specialization">Pediatr</field>
+    </record>
+
+</odoo>
