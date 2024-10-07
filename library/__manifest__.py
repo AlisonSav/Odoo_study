@@ -11,6 +11,7 @@
     },
     'data': [
         'security/ir.model.access.csv',
+        'wizard/library_add_reader_wizard_views.xml',
 
         'views/library_menu.xml',
         'views/library_book_views.xml',

@@ -18,18 +18,40 @@
         <field name="model">library.book</field>
         <field name="arch" type="xml">
             <form>
-                <header></header>
+                <header>
+                    <button name="show_recordset_opportunities" string="Show models" type="object"/>
+                    <button name="%(library.library_add_reader_wizard_action)d"
+                            string="Add readers" type="action"/>
+                </header>
                 <sheet>
                     <group>
                         <group>
                             <field name="name"/>
                             <field name="description"/>
+                            <field name="company_id"/>
+                            <field name="company_currency_id" invisible="1"/>
+                            <field name="monetary_price" widget="monetary"
+                                   options="{'currency_field': 'company_currency_id'}"/>
+                            <field name="inventory_state" widget="radio"/>
+                            <field name="release_date"/>
                         </group>
                         <group>
+                            <field name="book_cover_image"/>
+                            <field name="book_image" widget="image" class="oe_avatar m-0"
+                                   options="{'zoom': true, 'preview_image': 'avatar_256'}"/>
+                            <field name="active"/>
                             <field name="res_partner_id"/>
+                            <field name="partner_country_name"/>
                             <field name="res_partner_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page name="html_note_id" string="HTML note">
+                            <group>
+                                <field name="html_note" options="{'codeview': true}" class="oe-bordered-editor"/>
+                            </group>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

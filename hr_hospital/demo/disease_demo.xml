@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="disease_1" model="hr_hospital.disease">
+        <field name="name">Інфекційні захворювання</field>
+    </record>
+
+    <record id="disease_2" model="hr_hospital.disease">
+        <field name="name">Вірусні захворювання</field>
+        <field name="parent_id" ref="disease_1"/>
+    </record>
+
+    <record id="disease_3" model="hr_hospital.disease">
+        <field name="name">Бактеріальні захворювання</field>
+        <field name="parent_id" ref="disease_1"/>
+    </record>
+
+    <record id="disease_4" model="hr_hospital.disease">
+        <field name="name">Грип</field>
+        <field name="parent_id" ref="disease_2"/>
+    </record>
+
+    <record id="disease_5" model="hr_hospital.disease">
+        <field name="name">Коронавірус</field>
+        <field name="parent_id" ref="disease_2"/>
+    </record>
+
+    <record id="disease_6" model="hr_hospital.disease">
+        <field name="name">Сальмонельоз</field>
+        <field name="parent_id" ref="disease_3"/>
+    </record>
+</odoo>

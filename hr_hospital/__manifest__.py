@@ -20,6 +20,7 @@
     'demo': [
         'demo/doctor_demo.xml',
         'demo/hr_hospital.patient.csv',
+        'demo/disease_demo.xml',
     ],
     'installable': True,
     'auto_install': False,
